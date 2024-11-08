@@ -1,8 +1,9 @@
 const mongoose = require("mongoose");
 const assignCourseSchema = new mongoose.Schema({
-  courseName: String,
   courseId: String,
-  credit: Number,
+  sectionId: String,
+  publicAddress: String,
+  maxStudent: Number,
 });
 
 module.exports = mongoose.model("assignCourse", assignCourseSchema);
