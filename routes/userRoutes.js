@@ -83,7 +83,7 @@ router.put("/profile/update", async (req, res) => {
 router.get("/pending-approvals", async (req, res) => {
   try {
     const pendingUsers = await User.find({ isApproved: false })
-      .select("_id name email role")
+      .select("_id name email role publicAddress")
       .lean();
 
     const usersWithId = pendingUsers.map((user) => ({
