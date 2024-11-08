@@ -3,7 +3,7 @@ const router = express.Router();
 const User = require("../models/User");
 
 router.post("/create", async (req, res) => {
-  const { name, email, role, phone, address, bio, photoUrl, department,  } =
+  const { name, email, role, phone, address, bio, photoUrl, department } =
     req.body;
 
   try {
