@@ -23,12 +23,14 @@ const studentRoutes = require("./routes/studentRoutes");
 const facultyRoutes = require("./routes/facultyRoutes");
 const examControllerRoutes = require("./routes/examControllerRoutes");
 const gradeRoutes = require("./routes/gradeRoutes");
+const addCourseRoutes = require("./routes/AddCourseRoutes");
 
 app.use("/api/users", userRoutes);
 app.use("/api/students", studentRoutes);
 app.use("/api/faculty", facultyRoutes);
 app.use("/api/examController", examControllerRoutes);
 app.use("/api/grades", gradeRoutes);
+app.use("/api/addCourse", addCourseRoutes);
 
 app.get("/", (req, res) => {
   res.send(
