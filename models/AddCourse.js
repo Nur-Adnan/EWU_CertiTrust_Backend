@@ -5,4 +5,4 @@ const courseSchema = new mongoose.Schema({
   credit: Number,
 });
 
-const Course = mongoose.model("Course", courseSchema);
+module.exports = mongoose.model("Course", courseSchema);
